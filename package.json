@@ -1,0 +1,39 @@
+{
+  "name": "youtube-remote",
+  "version": "0.1.0",
+  "description": "Youtube Leanback API wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "needle": "^1.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxhotel/youtube-remote.git"
+  },
+  "keywords": [
+    "youtube",
+    "remote",
+    "cast",
+    "api",
+    "wrapper",
+    "player",
+    "lounge",
+    "token"
+  ],
+  "author": {
+    "name": "Alex",
+    "email": "alxmorais8@msn.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alxhotel/youtube-remote/issues"
+  },
+  "homepage": "https://github.com/alxhotel/youtube-remote#readme",
+  "devDependencies": {
+    "standard": "^14.3.1"
+  }
+}
