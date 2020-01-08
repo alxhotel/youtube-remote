@@ -79,20 +79,20 @@ class YoutubeRemote {
     })
   }
 
-  addToQueue (videoId) {
-    this._queueAction(videoId, ACTION_ADD)
+  addToQueue (videoId, callback) {
+    this._queueAction(videoId, ACTION_ADD, callback)
   }
 
-  playNext (videoId) {
-    this._queueAction(videoId, ACTION_INSERT)
+  playNext (videoId, callback) {
+    this._queueAction(videoId, ACTION_INSERT, callback)
   }
 
-  removeVideo (videoId) {
-    this._queueAction(videoId, ACTION_REMOVE)
+  removeVideo (videoId, callback) {
+    this._queueAction(videoId, ACTION_REMOVE, callback)
   }
 
-  clearPlaylist () {
-    this._queueAction('', ACTION_CLEAR)
+  clearPlaylist (callback) {
+    this._queueAction('', ACTION_CLEAR, callback)
   }
 
   _inSession () {

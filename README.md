@@ -18,7 +18,10 @@ npm install youtube-remote
 const client = new YoutubeRemote(screenId)
 
 // Play a Youtube video by id
-client.playVideo('LqYIKYEnX7Y')
+client.playVideo('LqYIKYEnX7Y', function (err) {
+  if (err) return console.log('Error: ', err)
+  console.log('Playing video :)')
+})
 ```
 
 ## API
@@ -29,23 +32,25 @@ Start a new remote connection.
 
 `screenId` is the screen identifier of the device you you want to connect to.
 
-#### `client.playVideo(videoId)`
+#### `client.playVideo(videoId, [listId, callback])`
 
 Start a new queue (or playlist) and start playing a new Youtube video.
 
-#### `client.addToQueue(videoId)`
+Use `listId` to provide the identifier of a Yotube playlist.
+
+#### `client.addToQueue(videoId, [callback])`
 
 Add a new video to the queue.
 
-#### `client.playNext(videoId)`
+#### `client.playNext(videoId, [callback])`
 
 Add a new video to the queue just after the current one.
 
-#### `client.removeVideo(videoId)`
+#### `client.removeVideo(videoId, [callback])`
 
 Remove a video from the queue.
 
-#### `client.clearPlaylist()`
+#### `client.clearPlaylist([callback])`
 
 Clear the current playlist.
 
