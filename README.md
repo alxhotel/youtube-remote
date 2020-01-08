@@ -6,27 +6,46 @@
 
 Youtube API wrapper to control your device.
 
+## Installation
+
+```sh
+npm install youtube-remote
+```
+
+## Usage
+
+```js
+const client = new YoutubeRemote(screenId)
+
+// Play a Youtube video by id
+client.playVideo('LqYIKYEnX7Y')
+```
+
 ## API
 
-### `client = new YoutubeRemote(screenId)`
+#### `client = new YoutubeRemote(screenId)`
 
 Start a new remote connection.
 
 `screenId` is the screen identifier of the device you you want to connect to.
 
-### `client.addToQueue(videoId)`
+#### `client.playVideo(videoId)`
+
+Start a new queue (or playlist) and start playing a new Youtube video.
+
+#### `client.addToQueue(videoId)`
 
 Add a new video to the queue.
 
-### `client.playNext(videoId)`
+#### `client.playNext(videoId)`
 
 Add a new video to the queue just after the current one.
 
-### `client.removeVideo(videoId)`
+#### `client.removeVideo(videoId)`
 
 Remove a video from the queue.
 
-### `client.clearPlaylist()`
+#### `client.clearPlaylist()`
 
 Clear the current playlist.
 
