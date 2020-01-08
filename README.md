@@ -15,6 +15,8 @@ npm install youtube-remote
 ## Usage
 
 ```js
+const YoutubeRemote = require('youtube-remote')
+
 const client = new YoutubeRemote(screenId)
 
 // Play a Youtube video by id
