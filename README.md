@@ -1,7 +1,8 @@
 # youtube-remote
 
 [![NPM Version](https://img.shields.io/npm/v/youtube-remote.svg)](https://www.npmjs.com/package/youtube-remote)
-[![Travis Build](https://img.shields.io/travis/com/alxhotel/youtube-remote/master.svg)](https://travis-ci.com/alxhotel/youtube-remote)
+[![Build Status](https://img.shields.io/travis/com/alxhotel/youtube-remote/master.svg)](https://travis-ci.com/alxhotel/youtube-remote)
+[![Dependency Status](https://david-dm.org/alxhotel/youtube-remote/status.svg)](https://david-dm.org/alxhotel/youtube-remote)
 [![Standard - Javascript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Youtube API wrapper to control your device.
