@@ -147,9 +147,14 @@ class YoutubeRemote {
     this._doPost(BIND_URL, params, data, headers, function (err, body) {
       if (err) return callback(err)
 
-      self.sId = S_ID_REGEX.exec(body)[1]
-      self.gSessionId = GSESSION_ID_REGEX.exec(body)[1]
-      self.playlistId = PLAYLIST_ID_REGEX.exec(body)[1]
+      try {
+        self.sId = S_ID_REGEX.exec(body)[1]
+        self.gSessionId = GSESSION_ID_REGEX.exec(body)[1]
+        self.playlistId = PLAYLIST_ID_REGEX.exec(body)[1]
+      } catch (err) {
+        // Unexpected body
+        callback(err)
+      }
 
       try {
         self.firstVideo = FIRSTVIDEO_ID_REGEX.exec(body)[1]
