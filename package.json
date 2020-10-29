@@ -34,6 +34,6 @@
   },
   "homepage": "https://github.com/alxhotel/youtube-remote#readme",
   "devDependencies": {
-    "standard": "^15.0.0"
+    "standard": "^16.0.0"
   }
 }
