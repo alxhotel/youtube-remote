@@ -1,7 +1,7 @@
 # youtube-remote
 
 [![NPM Version](https://img.shields.io/npm/v/youtube-remote.svg)](https://www.npmjs.com/package/youtube-remote)
-[![Build Status](https://img.shields.io/github/workflow/status/alxhotel/youtube-remote/ci/master)](https://github.com/alxhotel/youtube-remote/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/alxhotel/youtube-remote/ci.yml?branch=master)](https://github.com/alxhotel/youtube-remote/actions)
 [![Dependency Status](https://img.shields.io/librariesio/release/npm/youtube-remote)](https://libraries.io/npm/youtube-remote)
 [![Standard - Javascript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
